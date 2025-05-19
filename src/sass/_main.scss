@@ -1,1 +1,38 @@
+.offer {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 100vh;
+    color: #fff;
 
+    .container {
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: "Angelica Pro Display", 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: var(--title-xxl);
+        line-height: 114.58%;
+        margin: 0 0 38px 0;
+    }
+
+    &__link {
+        display: block;
+        color: #fff;
+        width: fit-content;
+        padding-bottom: 12px;
+        font-size: var(--title-md);
+        text-decoration: none;
+        border-bottom: 1px solid #fff;
+        transition: .3s;
+
+        &:hover {
+            color: $accentColor;
+            border-color: $accentColor;
+        }
+    }
+}

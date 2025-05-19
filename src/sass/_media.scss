@@ -9,13 +9,129 @@
 }
 
 @media (max-width: 992px) {
+    // header 768
+    .header {
+        &__drop {
+            max-width: 460px;
+        }
+    }
 }
 
 @media (max-width: 876px) {
 }
 
 @media (max-width: 768px) {
+    // root 768
+    :root {
+        --title-xxl: 32px;
+        --title-xl: 26px;
+        --title-lg: 22px;
+        --title-md: 18px;
+        --title-sm: 16px;
+        --text-md: 14px;
+        --text-sm: 12px;
+    }
+
+    // header 768
+    .header {
+        &_main {
+            padding-top: 15px;
+        }
+
+        &__drop {
+            padding-top: 27px;
+            padding-left: 30px;
+        }
+
+        &__ui-links {
+            margin-bottom: 33px;
+            a > svg{
+            color: #000;
+            }
+        }
+
+        &__menu-list {
+            row-gap: 15px;
+        }
+
+        &__socials {
+            margin-top: 40px;
+            column-gap: 20px;
+            li svg {
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        &__phone {
+            margin-top: 20px;
+        }
+
+        &__address {
+            margin-top: 10px;
+        }
+
+        &__cart-mob {
+            display: block;
+        }
+    }
+
+    // offer 768
+    .offer {
+        background-position: top right;
+        height: auto;
+        padding: 20% 0;
+    }
 }
 
 @media (max-width: 576px) {
+    // header 576
+    .header {
+
+        &__logo {
+            max-width: 126px;
+        }
+
+        &__drop {
+            padding-left: 15px;
+            padding-top: 16px;
+            z-index: 15;
+        }
+
+        &__burger {
+            height: 15px;
+            width: 22.8px;
+        }
+    }
+
+    // offer 576
+    .offer {
+        padding: 105px 0;
+        position: relative;
+        z-index: 2;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: rgba($color: #000000, $alpha: .3);
+        }
+
+        &__content {
+            position: relative;
+            z-index: 3;
+        }
+
+        &__title {
+            font-size: var(--title-lg);
+            margin-bottom: 15px;
+        }
+
+        &__link {
+            font-size: var(--text-sm);
+            padding-bottom: 3px;
+        }
+    }
 }

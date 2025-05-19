@@ -58,11 +58,14 @@ $color1: #ff0000;
 
 
 // Fonts
-@include font-face('Roboto', '../fonts/Roboto/Roboto-SemiBold', 600, normal, ttf);
-@include font-face('Roboto', '../fonts/Roboto/Roboto-Medium', 500, normal, ttf);
-@include font-face('Roboto', '../fonts/Roboto/Roboto-Regular', 400, normal, ttf);
+@include font-face('Mazzard', '../fonts/Mazzard/Mazzard-SemiBold', 600, normal, ttf);
+@include font-face('Mazzard', '../fonts/Mazzard/Mazzard-Medium', 500, normal, ttf);
+@include font-face('Mazzard', '../fonts/Mazzard/Mazzard-Light', 300, normal, ttf);
+
+
+@include font-face('Angelica Pro Display', '../fonts/AngelicaProDisplay/AngleciaProDisplay-Italic', 400, italic, ttf);
 
 // Vars
-
+$accentColor: #C31718;
 // Путь к спрайту для конкатенации
 $sprite: "../svg/dest/stack/spriteMulti.svg#";

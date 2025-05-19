@@ -82,13 +82,13 @@ function scripts() {
                 ],
             },
         }))
-        .pipe(dest(dir + '/JS/'))
+        .pipe(dest(dir + '/js/'))
 }
 
 // Наблюдаем за всеми изменениями (gulp-watch) | Watch all changes (gulp-watch)
 function startWatch() {
     watch(['src/sass/**/*.+(scss|sass)'], style);
-    watch(['src/JS/**/*.js', '!src/**/*.min.js'], scripts);
+    watch(['src/js/**/*.js', '!src/**/*.min.js'], scripts);
     watch(['src/**/*.html'], html);
     watch(['src/**/*.html']).on('change', browserSync.reload);
     watch(['src/images/**/*'], images);
