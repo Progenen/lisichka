@@ -1,8 +1,9 @@
 .collections {
     margin-top: 72px;
 
-    &__title {
+    &__section-title {
         font-size: var(--title-xl);
+        margin-bottom: 36px;
     }
 
     .row {
@@ -10,14 +11,9 @@
         grid-template-columns: 1fr 1fr;
         margin-bottom: 24px;
         gap: 24px;
-
-        &_top {
-            margin-top: 36px;
-        }
     }
 
-    &__col_right,
-    &__col_left {
+    &__col {
         display: block;
         position: relative;
         min-height: 372px;
@@ -63,6 +59,11 @@
     .collections {
         margin-top: 33px;
 
+        &__section-title {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
         .container {
             padding: 0 24px;
         }
@@ -72,17 +73,10 @@
             flex-direction: column;
             gap: 24px;
             margin-bottom: 24px;
-
-            &_top {
-                margin-top: 15px;
-            }
         }
 
-        &__col_right,
-        &__col_left {
+        &__col {
             min-height: 162px;
         }
-
-
     }
 }
