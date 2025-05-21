@@ -57,7 +57,7 @@ footer {
 }
 
 .container {
-    max-width: 1214px;
+    max-width: calc(1184px + calc(var(--container-pad-x) * 2));
     width: 100%;
     padding: 0 var(--container-pad-x);
     margin: 0 auto;
