@@ -1,0 +1,73 @@
+.reviews {
+    .container {
+        max-width: 1214px;
+    }
+
+    margin-top: 67px;
+
+    &__title {
+        margin-bottom: 36px;
+        font-size: var(--title-xl);
+    }
+
+    &__img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        max-width: 278px;
+        min-height: 379px;
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+
+    //reviews 992
+    .reviews {
+        margin-top: 30px;
+
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    //reviews 768
+    .reviews {
+        margin-top: 27px;
+
+        &__title {
+            margin-bottom: 15px;
+        }
+
+        &__img {
+            width: 161px;
+            height: 162px;
+            min-width: 161px;
+            min-height: 162px;
+            max-width: 161px;
+            max-height: 162px;
+            aspect-ratio: unset;
+            margin-bottom: 24px;
+        }
+
+        .row {
+            gap: 24px;
+            --bs-gutter-x: 26px;
+            --bs-gutter-y: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .col-3 {
+            flex: 0 0 auto;
+            width: 161px;
+            max-width: 161px;
+            padding-left: 0;
+            padding-right: 0;
+            margin-bottom: 0;
+        }
+    }
+}
