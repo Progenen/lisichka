@@ -15,6 +15,8 @@ html {
     --text-md: 16px;
     --text-sm: 14px;
     --black: #000;
+
+    --container-pad-x: 24px;
 }
 
 body {
@@ -57,7 +59,7 @@ footer {
 .container {
     max-width: 1214px;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 var(--container-pad-x);
     margin: 0 auto;
 }
 

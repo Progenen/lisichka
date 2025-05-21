@@ -1,9 +1,8 @@
 @import '../_support';
 
 .about-us {
-
+    margin-top: 76px;
     &__title {
-        margin-top: 72px;
         font-size: var(--title-xl);
         margin-bottom: 36px;
     }
@@ -30,7 +29,7 @@
         }
     }
 
-    &__Lis {
+    &__lis {
         display: flex;
         text-decoration: none;
     }
@@ -106,18 +105,19 @@
 
     // about-us 768px
     .about-us {
+        margin-top: 34px;
         .container {
             padding: 0;
         }
 
         &__title {
-            margin-top: 34px;
             font-size: 26px;
-            padding: 0 15px;
+            padding: 0 var(--container-pad-x);
+            margin-bottom: 14px;
         }
 
         &__col_right {
-            padding: 0 15px;
+            padding: 0 var(--container-pad-x);
         }
 
         &__content {
@@ -138,9 +138,8 @@
             }
         }
 
-        &__Lis {
+        &__lis {
             margin-top: 31px;
-            margin-left: 9px;
 
             img {
                 width: 50%;
@@ -149,13 +148,15 @@
         }
 
         &__text {
-            margin-left: 15px;
+            margin-top: 18px;
+            margin-left: 6px;
 
-            &-title {
-                font-size: var(--text-sm);
-                max-width: 228px;
-                margin: 0;
-            }
+        }
+
+        &__text-title {
+            font-size: var(--text-sm);
+            max-width: 228px;
+            margin: 0;
         }
 
         &__list {
