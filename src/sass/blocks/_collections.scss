@@ -6,14 +6,14 @@
         margin-bottom: 36px;
     }
 
-    .row {
+    &__items {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-bottom: 24px;
         gap: 24px;
     }
 
-    &__col {
+    &__item {
         display: block;
         position: relative;
         min-height: 372px;
@@ -38,7 +38,7 @@
     .collections {
         margin-top: 46px;
 
-        .row {
+        &__items {
             gap: 15px;
             margin-bottom: 15px;
         }
@@ -64,18 +64,14 @@
             margin-bottom: 15px;
         }
 
-        .container {
-            padding: 0 24px;
-        }
-
-        .row {
+        &__items {
             display: flex;
             flex-direction: column;
             gap: 24px;
             margin-bottom: 24px;
         }
 
-        &__col {
+        &__item {
             min-height: 162px;
         }
     }
