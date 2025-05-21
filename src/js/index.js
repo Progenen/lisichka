@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (burger.classList.contains("is-active")) {
             burger.classList.remove("is-active");
             menu.classList.remove("is-active");
-            document.body.style.overflow = "hidden";
+            document.body.style.overflow = "auto";
         } else {
             burger.classList.add("is-active");
             menu.classList.add("is-active");
-            document.body.style.overflow = "auto";
+            document.body.style.overflow = "hidden";
         }
     });
 
