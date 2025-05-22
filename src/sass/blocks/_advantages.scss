@@ -4,7 +4,7 @@
     &__title {
         font-size: var(--title-lg);
         line-height: 151%;
-        max-width: 819px;
+        width: 69.173%;
     }
 
     .row-items {
@@ -16,33 +16,19 @@
         align-items: start;
     }
 
+    &__items {
+        gap: 24px;
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+
     &__item {
+
+        width: calc(33.333% - 24px);
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-
-        &:nth-child(-n+3) {
-            .advantages__item-title {
-                margin-top: 31px;
-                max-width: 201px;
-            }
-
-            .advantages__item-text {
-                max-width: 260px;
-            }
-        }
-
-        &:nth-child(n+4) {
-            .advantages__item-title {
-                margin-top: 39px;
-                max-width: 216px;
-                min-height: 78px;
-            }
-
-            .advantages__item-text {
-                max-width: 266px;
-            }
-        }
+        height: auto;
     }
 
     &__item-img {
@@ -52,19 +38,51 @@
             width: 100%;
             height: auto;
             display: block;
-            max-width: 100%;
         }
     }
 
     &__item-title {
+        display: flex;
+        flex: 1 1 auto;
+        height: 100%;
         margin-top: 31px;
         font-size: var(--title-md);
-        max-width: 266px;
+        width: 56.943%;
     }
 
     &__item-text {
         margin-top: 31px;
         font-size: var(--title-sm);
-        max-width: 272px;
+        width: 68.545%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .advantages {
+        &__title {
+            width: 69.173%;
+            line-height: 151%;
+        }
+
+        .row-items {
+            margin-top: 60px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 18px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .advantages {
+        &__item-title {
+            font-size: var(--text-md);
+            width: 70.943%;
+        }
+
+        &__item-text {
+            font-size: var(--text-sm);
+        }
+
     }
 }
