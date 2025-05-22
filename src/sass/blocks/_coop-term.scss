@@ -1,0 +1,46 @@
+.coop-term {
+    margin-top: 102px;
+
+    &__title {
+        margin-bottom: 72px;
+        line-height: 151%;
+        font-size: var(--title-lg);
+    }
+
+    &__content {
+        gap: 54px;
+    }
+
+    &__col {}
+
+    &__col_left {
+        width: 46.876%;
+    }
+
+    &__btn {
+        margin-top: 52px;
+
+        button {
+            width: 73.407%;
+            padding: 17px 0;
+            background: #c31718;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: var(--title-lg);
+            line-height: 151%;
+            cursor: pointer;
+            font-family: "Mazzard", sans-serif;
+            font-weight: 300;
+        }
+    }
+
+    &__text {
+        font-size: var(--title-sm);
+        margin: 0;
+        padding: 0;
+        line-height: 1.167;
+    }
+
+    &__col-right {}
+}
