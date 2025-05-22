@@ -14,7 +14,7 @@
     &__col {}
 
     &__col_left {
-        width: 46.876%;
+        width: 46.532%;
     }
 
     &__btn {
@@ -42,5 +42,73 @@
         line-height: 1.167;
     }
 
-    &__col-right {}
+    &__col_right {
+        width: auto;
+
+        img {
+            margin-top: 7px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 1049px) {
+    .coop-term {
+        &__content {
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &__col_left {
+            width: 95%;
+            margin: 0 auto;
+            order: 0;
+        }
+
+        &__col_right {
+            width: 100%;
+            order: -1; // Перемещает col_right выше col_left
+            margin-top: 0;
+
+            .coop-term__img {
+                margin: 0 auto;
+                max-width: 320px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__btn button {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .coop-term {
+        margin-top: 48px;
+
+        &__title {
+            margin-bottom: 32px;
+            font-size: var(--title-md);
+        }
+
+        &__text {
+            font-size: var(--text-sm);
+            line-height: 1.167;
+        }
+
+        &__btn {
+            margin-top: 32px;
+        }
+
+        &__btn button {
+            font-size: var(--title-sm);
+            padding: 14px 0;
+        }
+    }
 }
