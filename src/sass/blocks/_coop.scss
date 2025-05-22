@@ -1,4 +1,4 @@
-.coop {
+.coop-with {
     margin-top: 75px;
 
     &__section-title {
@@ -35,8 +35,8 @@
 
 @media (max-width: 992px) {
 
-    // collections 992
-    .coop {
+    // coop-with 992
+    .coop-with {
         margin-top: 46px;
 
         &__items {
@@ -56,8 +56,8 @@
 @media (max-width: 576px) {
 
 
-    // collections 576
-    .coop {
+    // coop-with576
+    .coop-with {
         margin-top: 33px;
 
         &__section-title {
