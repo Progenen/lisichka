@@ -19,20 +19,18 @@
 
     &__btn {
         margin-top: 52px;
-
-        button {
-            width: 73.407%;
-            padding: 17px 0;
-            background: #c31718;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: var(--title-lg);
-            line-height: 151%;
-            cursor: pointer;
-            font-family: "Mazzard", sans-serif;
-            font-weight: 300;
-        }
+        width: 73.407%;
+        padding: 17px 0;
+        background: #c31718;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: var(--title-lg);
+        line-height: 151%;
+        cursor: pointer;
+        font-family: "Mazzard", sans-serif;
+        font-weight: 300;
+        display: block;
     }
 
     &__text {
@@ -57,11 +55,11 @@
     .coop-term {
         &__content {
             flex-direction: column;
-            gap: 24px;
+            gap: 12px;
         }
 
         &__col_left {
-            width: 95%;
+            width: 100%;
             margin: 0 auto;
             order: 0;
         }
@@ -70,19 +68,18 @@
             width: 100%;
             order: -1;
             margin-top: 0;
+        }
 
-            .coop-term__img {
-                margin: 0 auto;
-                max-width: 320px;
-            }
+        &__img {
+            margin: 0 auto;
+            max-width: 320px;
 
             img {
-                width: 100%;
-                height: auto;
+                margin-top: 0;
             }
         }
 
-        &__btn button {
+        &__btn {
             width: 100%;
         }
     }
@@ -93,7 +90,7 @@
         margin-top: 48px;
 
         &__title {
-            margin-bottom: 32px;
+            margin-bottom: 15px;
             font-size: var(--title-md);
         }
 
@@ -103,12 +100,11 @@
         }
 
         &__btn {
-            margin-top: 32px;
-        }
-
-        &__btn button {
+            margin-top: 15px;
             font-size: var(--title-sm);
-            padding: 14px 0;
+            line-height: normal;
+            padding: 12px 0;
+            
         }
     }
 }
