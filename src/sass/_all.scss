@@ -14,8 +14,9 @@ html {
     --title-sm: 18px;
     --text-md: 16px;
     --text-sm: 14px;
-
     --black: #000;
+
+    --container-pad-x: 24px;
 }
 
 body {
@@ -56,12 +57,16 @@ footer {
 }
 
 .container {
-    max-width: 1214px;
+    max-width: calc(1184px + calc(var(--container-pad-x) * 2));
     width: 100%;
-    padding: 0 15px;
+    padding: 0 var(--container-pad-x);
     margin: 0 auto;
 }
 
 .row {
     display: flex;
+}
+
+main {
+    margin-bottom: 100px;
 }

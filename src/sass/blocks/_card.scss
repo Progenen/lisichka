@@ -1,0 +1,176 @@
+.card {
+        max-width: calc(25% - 18px);
+    width: 100%;
+
+    &__image {
+        position: relative;
+        width: 100%;
+        height: 379px;
+        padding: 23px 20px;
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+            display: block;
+        }
+    }
+
+    &__favor {
+        display: block;
+        margin-left: auto;
+        color: #fff;
+        position: relative;
+        z-index: 2;
+        border: none;
+        padding: 0;
+        background: none;
+        outline: none !important;
+        width: 29px;
+        height: 29px;
+        cursor: pointer;
+        transition: .3s;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover {
+            color: $accentColor;
+        }
+    }
+
+    &__title {
+        margin-top: 24px;
+    }
+
+    &__select {
+        margin-top: 18px;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border: 1px solid black;
+            right: 18px;
+            top: 12px;
+            border-top: none;
+            border-left: none;
+            transform: rotateZ(45deg);
+        }
+    }
+
+    &__select select {
+        background: #fff;
+        width: 100%;
+        font-family: "Mazzard", sans-serif;
+        font-size: var(--text-md);
+        font-weight: 300;
+        line-height: 210%;
+        padding: 5px 18px 0;
+        border-radius: 1.5px;
+        border: 1px solid #575757;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+
+
+        &:focus {
+            outline: none;
+            border-color: $accentColor;
+        }
+
+        &::-ms-expand {
+            display: none;
+        }
+    }
+
+    &__btn {
+        margin-top: 24px;
+        border-radius: 1.787px;
+        background-color: $accentColor;
+        border: none;
+        color: #fff;
+        font-family: "Mazzard", sans-serif;
+        font-size: var(--text-md);
+        line-height:235%;
+        font-weight: 300;
+        width: 100%;
+        cursor: pointer;
+        border: 1px solid $accentColor;
+        transition: .3s;
+        &:hover {
+            background: white;
+            color: $accentColor;
+        }
+    }
+}
+
+@media (max-width:992px){
+    .card {
+        max-width: calc(50% - 11px);
+
+        &__image {
+            height: 320px;
+        }
+    }
+}
+
+@media (max-width:768px){
+    .card {
+
+        &__image {
+            padding-top: 13px;
+            padding-right: 13px;
+        }
+
+        &__favor {
+            width: 20px;
+            height: 20px;
+        }
+
+        &__title {
+            margin-top: 16px;
+        }
+
+        &__select {
+            margin-top: 11px;
+
+            &::after {
+                top: 8px;
+                width: 7px;
+                height: 7px;
+            }
+        }
+
+        &__select select {
+            font-size: var(--text-sm);
+            padding-top: 2px;
+            padding-left: 11.5px;
+            padding-right: 20px;
+        }
+
+        &__btn {
+            margin-top: 15px;
+            font-size: var(--text-sm);
+        }
+    }
+}
+
+@media (max-width:576px){
+    .card {
+        &__image {
+            height: 220px;
+        }
+    }
+}
+
+@media (max-width:390px){
+    .card {
+        max-width: 100%;
+    }
+}

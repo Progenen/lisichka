@@ -1,0 +1,36 @@
+.wholesalers {
+    margin-top: 72px;
+    background-image: url('/images/content/wholesalers/background.webp');
+
+    &__banner {
+        font-size: var(--title-xl);
+        min-height: 288px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    //wholesalers 768
+    .wholesalers {
+        margin-top: 60px;
+
+        &__banner {
+            min-height: 200px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    //wholesalers 576
+    .wholesalers {
+        margin-top: 45px;
+
+        &__banner {
+            min-height: 162px;
+        }
+    }
+}
